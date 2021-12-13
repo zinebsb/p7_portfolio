@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    color:#FF5C5C;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+ul li a{
+    font-size: 1.2em;
+}
+body>header a:hover{
+    background: none;
+    color: #E62C6A;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+body>header{
+    font-size: 0.95em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.2em;
+    width: 20%;
+}
+h1{
+    font-size: 2.0em;
+    margin: 0 0 5em 0;
+}
+body>header p{
+    font-size: 1.2em;
+    margin: 1.2em 0 0.5em 0;
+    line-height: 1.4em;
+}
+nav{
+    width: 100%;
+    padding: 1.2em 0 0 0;
+}
+ul{
+    display: flex;
+    
+    margin: 1em 0 0 0.5em;
+}
+main{
+    padding: 1em;
+    width: 80%;
+    margin-left: 20%;
+}
+main .container{
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 100px);
+    justify-content: center;
+}
+main .container div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.container>div{
+    display: flex;  
+    flex-direction: column;
+}
+.container header{
+    width: 100%;
+    height: 100%;
+}
+main h2{
+    text-align: center;
+}
+main a{
+    color: #34BD8F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+main a:hover{
+    color: white;
+}
+.e1, .e2, .e3, .e4, .e5, .e6, .e7, .e8, .e9, .e10{
+    background-color: #8BD2BA;
+}
+.e1{
+    grid-column:1/4;
+    grid-row:1/4;
+}
+.e2{
+    grid-column:4/6;
+    grid-row:1/5;
+}
+.e3{
+    grid-column:6/9;
+    grid-row:1/6;
+}
+.e4{
+    grid-column:1/4;
+    grid-row:4/7;
+}
+.e5{
+    grid-column:4/6;
+    grid-row:5/7;
+}
+.e6{
+    grid-column:6/9;
+    grid-row:6/7;
+}
+.e1:hover, .e2:hover, .e3:hover, .e4:hover, .e5:hover, .e6:hover, .e8:hover{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: none;
+    box-shadow: 0px 0px 8px #8BD2BA;
+}
+
+@media (max-width: 1024px){
+    body{
+        flex-direction: column;
+    }
+    body>header{
+        position: relative;
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        margin-left: 0;
+    }
+    main .container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 200px);
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+        font-size: 2.2em;
+        margin: 0 0 3em 0;
+    }
+    nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .e1{
+        grid-column:1/2;
+        grid-row:1/3;
+    }
+    .e2{
+        grid-column:2/3;
+        grid-row:1/2;
+    }
+    .e3{
+        grid-column:3/4;
+        grid-row:1/3;
+    }
+    .e4{
+        grid-column:1/2;
+        grid-row:3/5;
+    }
+    .e5{
+        grid-column:2/3;
+        grid-row:2/4;
+    }
+    .e6{
+        grid-column:3/4;
+        grid-row:3/5;
+    }
+    .e7{
+        grid-column:1/2;
+        grid-row:5/7;
+    }
+    .e8{
+        grid-column:2/3;
+        grid-row:4/6;
+    }
+    .e9{
+        grid-column:3/4;
+        grid-row:5/7;
+    }
+    .e10{
+        grid-column:2/3;
+        grid-row:6/7;
+    }
+}
+@media (max-width: 600px){
+    body{
+        flex-direction: column;
+    }
+    body>header{
+        position: relative;
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        margin-left: 0;
+    }
+    main .container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 200px);
+    }
+    .e1{
+        grid-column:1/2;
+        grid-row:1/3;
+    }
+    .e2{
+        grid-column:2/3;
+        grid-row:1/2;
+    }
+    .e3{
+        grid-column:1/2;
+        grid-row:3/4;
+    }
+    .e4{
+        grid-column:2/3;
+        grid-row:2/4;
+    }
+    .e5{
+        grid-column:1/2;
+        grid-row:4/6;
+    }
+    .e6{
+        grid-column:2/3;
+        grid-row:4/5;
+    }
+    .e7{
+        grid-column:1/2;
+        grid-row:6/7;
+    }
+    .e8{
+        grid-column:2/3;
+        grid-row:5/7;
+    }
+    .e9{
+        grid-column:1/2;
+        grid-row:7/8;
+    }
+    .e10{
+        grid-column:2/3;
+        grid-row:7/8;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1>Portfolio de Zineb Semmouzi</h1>
+        <p>Portfolio donde muestro los proyectos que hemos hecho en <u>Sistemes de representació avançada</u> i <u>Recursos Interactius aplicats a la gràfica</u> en <a href="http://www.easdalcoi.es">easdalcoi</a>.</p>
+        <p>Alumna Zineb Semmouzi - <a href="mailto:semmouzizi@easdalcoi.es">semmouzizi@easdalcoi.es</a></p>
+        <nav>
+            <ul>
+                <li> <a href="https://www.instagram.com/zorreb/?hl=es/">insta</a></li>
+                <li> <a href="https://twitter.com/meikopr">twitter</a></li>
+                <li> <a href="https://github.com/zinebsb">github</a></li>
+            </ul>    
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="e1">
+                <header>
+                    <a href="https://zinebsb.github.io/p1_llocweb_2gp/"><h2>1. Sitio Web</h2></a>
+                 </header>
+            </div>
+           <div class="e2">
+                <header>
+                    <a href="https://zinebsb.github.io/p2_img_2gp/"><h2>2.Sitio Web y enlaces</h2></a>
+                </header>
+            </div>
+            <div class="e3">
+                <header>
+                    <a href="https://zinebsb.github.io/p3_img_video_audio/"><h2>3.Sitio Web imágenes y audio</h2></a>
+                </header>
+            </div>
+            <div class="e4">
+                <header>
+                    <a href="https://zinebsb.github.io/p4_gallery/"><h2>4.Galería</h2></a>      
+                </header>
+            </div>
+            <div class="e5">
+                <header>
+                    <a href="https://zinebsb.github.io/p5_grid_2GP/"><h2>5.Grid</h2></a>
+                </header>
+            </div>
+            <div class="e6">
+                <header>
+                    <a href="https://zinebsb.github.io/p6_neoplasticismo/"> <h2>6.Neoplasticismo</h2></a>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
